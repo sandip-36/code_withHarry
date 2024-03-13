@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+</head>
+
+<body>
+
+
+    <script>
+        // let a = prompt("Hey whats your age?");
+        // a = Number.parseInt(a);
+        // if(a<0){
+        //     alert("This is a valid age.")
+        // }
+        // else if(a<9){
+        //     alert("You can not drive you are just a kid!")
+        // }
+        // else if(a<18 && a>=9){
+        //     alert("you can drive after 18!")
+        // }
+        // else{
+        //     alert("You can drive now")
+        // }
+
+
+        // logical conditions
+
+        /*  let age = prompt("Enter your age");
+          age = Number.parseInt(age);
+          if (age>10 && age<20) {
+              console.log("Your age lies between 10 and 20");
+          }
+          else{
+              console.log("u are lie")
+          }*/
+
+        // logical conditions
+
+        // switch case
+        /*
+        let age = prompt("what is your age?");
+        age = Number.parseInt(age)
+        switch(age){
+            case 12: console.log("your age is 12")
+            break
+            case 13: console.log("your age is 13")
+            break
+            case 14: console.log("your age is 14")
+            case 15: console.log("your age is 15")
+            default: console.log("your age is not special")
+        }
+        */
+        // switch case
+
+        // for loop=======>
+
+        /*let n = prompt("enter your number!");
+        n = Number.parseInt(n)
+        
+        for(let i=0; i<=n; i++){
+            console.log(i)
+        
+        
+        let sum = 0;
+        let n = prompt("Enter your no.")
+        n = Number.parseInt(n);
+        for(let i = 0; i<n; i++){
+            sum += i
+        }
+        
+        console.log("Sum of first " + n + "natural number is" + sum)
+        
+        }*/
+
+        // for loop=======>
+
+        // while loop========>
+        /*
+        let n = prompt("enter your number!");
+        let i = 0;
+         while(i < n){
+            console.log(i);
+            i++;
+         }
+         
+        */
+        // while loop========>
+
+
+        // Do while loop========>
+
+        /*
+        let n = prompt("whats your number!");
+        n = Number.parseInt(n);
+        let i = 0;
+        
+        do{
+            console.log(i);
+            i++
+        }while(i < n)
+        */
+
+        // Do while loop========>
+
+        // function and how its worked
+
+        function onePlusavg(x, y) {
+            return 1 + (x + y) / 2
+        }
+
+
+        let a = 1;
+        let b = 2;
+        let c = 3;
+
+        console.log("Average of a and b is ", onePlusavg(a, b))
+        console.log("Average of b and c is ", onePlusavg(c, b))
+        console.log("Average of c and a is ", onePlusavg(c, a))
+
+
+        // function and how its worked
+
+        //  practice of loop and function
+
+        let sandi = {
+            topu: 90,
+            kelo: 85,
+            ratan: 45,
+            rakesh: 20
+        }
+        // ptoblm no1 with for loop condition
+
+        for (let i = 0; i < Object.keys(sandi).length; i++) {
+            console.log("The Amount has given to " + Object.keys(sandi)[i] + " is " + sandi[Object.keys(sandi)[i]])
+        }
+
+        // ptoblm no2 with for in loop condition
+
+        for (let key in sandi) {
+            console.log("The amount has give to " + key + " is " + sandi[key])
+        }
+
+        // ptoblm no3 with while loop condition
+
+        // let cn = 8;
+        // let i
+        // while(i != cn){
+        //     i = prompt("Plesaee enter you correct no")
+        //     console.log(i)
+        // }
+        // console.log("you have enterd correct no.")
+
+
+
+
+        // string introductions
+
+        let name = "sandi"
+        console.log(name.length)
+        console.log(name[0])
+        console.log(name[3])
+
+        //tamplate literal
+        let boy1 = "raju";
+        let boy2 = "tippa";
+        // raju is a firend of tippa 
+
+        let sentace = `${boy1} is a friend of ${boy2}`  //tamplate litteral
+        console.log(sentace);
+
+        // escape sequence
+        let fruit = "ban\'ana";
+        let fruit1 = "ban\nana";
+        let fruit2 = "ban\tana";
+        let fruit3 = "ban\rana";
+        console.log(fruit);
+        console.log(fruit1);
+        console.log(fruit2);
+        console.log(fruit3);
+
+        // string methods
+
+        let bou = "joyshree"
+        console.log(bou.length);
+
+        console.log(bou.toUpperCase())
+        console.log(bou.toLowerCase())
+        console.log(bou.slice(2, 4))
+        console.log(bou.slice(3))
+        console.log(bou.replace("shree", "iee"))
+
+        let bor = "sandi";
+
+        console.log(bou.concat(" is wife of ", bor, " in 2025"))
+
+        let nick = "        nondo          ";
+        console.log(nick.trim())
+
+        for (let i = 0; i < bou.length; i++) {
+            console.log(bou[i])
+        }
+        let i = 0;
+        while (i < bou.length) {
+            console.log(bou[i]);
+            i++;
+        }
+
+        let qst4 = "please give rs 5000"
+
+        let amount = qst4.slice("please give rs ".length)
+
+        console.log(amount)
+
+        // string methods
+
+
+        // array methods
+
+        let marks = [67, 45, 32, 25, 57, 86, false, null];
+
+        console.log(marks)
+
+        console.log(marks[0])
+        console.log(marks[2])
+        console.log(marks[3])
+        console.log(marks[4])
+        console.log(marks[5])
+        console.log(marks[6])
+        console.log(marks[7])
+        console.log(marks[8])
+
+        marks[8] = 99; // we can add array value
+        marks[5] = 68; // we can change array value
+
+        console.log("here is my all subjects marks", marks)
+
+        let num = [1, 2, 3, 4, 5, 6]
+
+        console.log(typeof num); // array always treat as object in defalut
+
+        let cnv = num.toString(); //convert into string
+
+        console.log(typeof cnv)
+
+        let jnt = num.join("-"); //joint with the string
+
+        console.log(jnt)
+
+        num.pop();  // remove last elelment in array
+        console.log(num);
+
+        let r = num.push(56); //push method can add element in array
+
+        console.log(num, r);
+
+        let s = num.shift();  //shift can removes start element of array
+
+        console.log(s, num);
+
+        let un = num.unshift(44); //add an element from the start of array
+
+        console.log(un, num);
+
+        delete num[0]; // delete operator will delete element but it will same length
+
+        console.log(num.length)
+
+        let num2 = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+        let num3 = [100, 11, 122, 132, 142, 152, 162, 12, 128, 129]
+
+        let newArray = num.concat(num2, num3);  // concat will concatination multiple arrays
+
+        console.log(newArray);
+
+        console.log(num, num2, num3); //previous arrays will remain same
+
+        num3.sort();
+
+        console.log(num3); // its sorting alphabetically
+
+        let compare = (a, b) => {  // here we used compare function to ascending sorting
+            return a - b
+        }
+
+        let compare2 = (a, b) => {  // here we used compare function to descending sorting
+            return b - a
+        }
+
+        num3.sort(compare);
+
+        console.log(num3);
+
+        num3.sort(compare2);
+
+        console.log(num3);
+
+        num2.reverse() //for reverse the array
+
+        console.log(num2);
+
+
+        // splice and slice=====
+
+        let num4 = [45,89,23,78,52,14]
+
+        num4.splice(2, 3, 18, 8, 10, 19, 95); //here 2 for delete 0-2 items from index and 3 for how many item you want to deleted and after that remain item will replaced 
+        
+        let deletedVal = num4.splice(2, 3, 18, 8, 10, 19, 95); // here you can see which items are deleted
+
+        console.log(num4);
+
+        console.log(deletedVal) ; //it will shows deleted values
+
+        let num5 = [5,4,3,2,1,0];
+
+        let newNum = num5.slice(3)
+        let newNum2 = num5.slice(2,5)
+
+        console.log(newNum);
+        console.log(newNum2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
